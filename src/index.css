@@ -1,0 +1,549 @@
+/*******************************************************************************
+ * IBM Confidential
+ * 
+ * OCO Source Materials
+ * 
+ * Copyright IBM Corp. 2019, 2020
+ * 
+ * The source code for this program is not published or otherwise
+ * divested of its trade secrets, irrespective of what has been
+ * deposited with the U.S. Copyright Office.
+ *******************************************************************************/
+ 
+/* Bootstrap Override Rules */
+body {
+  font-family: ibm !important;
+  background-color: #F5F7FA !important;
+}
+
+label {
+  display: inherit !important;
+  margin-bottom: inherit !important;
+}
+
+a {
+  color: inherit !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* General */
+.primaryButton {
+  background: #3d70b2;
+  border: 2px solid #3d70b2;
+  color: white;
+}
+
+.secondaryButton {
+  background: white;
+  color: #3d70b2;
+  border: 2px solid #3d70b2;
+}
+
+.red {
+  color: red;
+}
+
+.gray {
+  color: #5a6872;
+}
+
+.green {
+  color:#00a68f;
+}
+
+.boxError {
+  border-top: 2px solid red;
+}
+
+.semiBold {
+  font-family: ibm-semi-bold;
+}
+
+.datePicker {
+  background-color: #E2E8F2;
+  background-image: url("assets/images/calendar.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  padding-left: 35px;
+  padding-right: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  background-image: url("assets/images/down-chevron.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  padding-left: 5px;
+  padding-right: 15px;
+  border: none;
+  background-color: white;
+  color: #3d70b2;
+  font-family: ibm-semi-bold !important;
+}
+
+input {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Dropdown */
+.dd-wrapper {
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dd-header {
+  height: 40px;
+  background-color: #E2E8F2;
+  background-image: url("assets/images/down-chevron.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  padding-left: 10px;
+  padding-right: 15px;
+  line-height: 40px;
+  position: relative;
+  z-index: 100;
+}
+
+.dd-header-title {
+  font-family: ibm;
+}
+
+.dd-list {
+  list-style-type: none;
+  background-color: white;
+  position: absolute;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  padding-left: 0px;
+  line-height: 40px;
+  z-index: 99;
+  left: 0; 
+  right: 0;
+  outline: 1px solid #3d70b2;
+}
+
+.dd-list li {
+  height: 40px;
+  font-family: ibm;
+}
+
+.dd-list li:hover {
+  background-color: #E2E8F2;
+}
+
+.dd-list-item span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dd-border {
+  outline: 1px solid #3d70b2;
+}
+
+
+/* Navigation Bar */
+.navBarTop {
+  background-color: white;
+  height: 48px;
+  line-height: 48px;
+}
+
+.navBarTop ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  letter-spacing: 0.13px;
+  color: #3d70b2;
+}
+
+.hamburger {
+  height: 16px;
+  width: 16px;
+  float: left;
+  margin-top: 17px;
+  margin-left: 24px;
+  margin-right: 24px;
+  background-image: url("assets/images/hamburger-icon-blue.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.floatLeft {
+  float: left;
+  margin-right: 35px;
+}
+
+.navBarSelected {
+  font-family: ibm-semi-bold;
+}
+
+.underlineSelected {
+  border-bottom: 4px solid #3d70b2;
+  margin-top: -4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.navBarIcons {
+  float: right;
+  margin-right: 30px;
+  margin-top: 17px;
+  line-height: 0px;
+}
+
+.searchIcon {
+  height: 16px;
+  width: 16px;
+  margin-right: 16px;
+  background-image: url("assets/images/search-icon.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+.settingsIcon {
+  height: 16px;
+  width: 16px;
+  margin-right: 16px;
+  background-image: url("assets/images/settings-icon.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+.profileIcon {
+  height: 16px;
+  width: 16px;
+  background-image: url("assets/images/profile-icon-gray.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.inputError {
+  height: 10px;
+  font-family: ibm-semi-bold;
+  padding-top: 2px;
+}
+
+.incorrectPass {
+  font-size: 8px;
+  margin-bottom: 17px;
+  margin-top: -20px;
+}
+
+.errorMsg {
+  border: 1px solid red;
+  border-left: 6px solid red;
+  background-color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+#errorMsgSymbol {
+  background-image: url("assets/images/error-icon.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  float: left;
+  height: 16px;
+  width: 16px;
+  margin-left: 23px;
+  margin-right: 16px;
+  margin-top: 13px
+}
+
+.successMsg {
+  border: 1px solid #5aa700;
+  border-left: 6px solid #5aa700;
+  background-color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  margin-bottom: 32px;
+  margin-top: -32px;
+}
+
+#successMsgSymbol {
+  background-image: url("assets/images/checkmark-icon.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  float: left;
+  height: 16px;
+  width: 16px;
+  margin-left: 23px;
+  margin-right: 16px;
+  margin-top: 13px
+}
+
+#messageX {
+  background-image: url("assets/images/x-icon.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  float: right;
+  height: 10px;
+  width: 10px;
+  margin-right: 18px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+/* Login Page */
+#loginTitle {
+  margin: auto;
+  text-align: center;
+  font-family: ibm-semi-bold;
+  margin-bottom: 15px;
+}
+
+#loginForm {
+  margin: auto;
+  width: 200px;
+  font-size: 10px;
+}
+
+#loginSubmit {
+  width: 100%;
+  height: 30px;
+  display: block;
+  color: white;
+  margin-top: 17px;
+}
+
+.loginBox {
+  width: 100%;
+  display: block;
+  background-color: #E2E8F2;
+  border: none;
+  padding: 7px;
+  box-sizing: border-box;
+  font-family: ibm;
+  margin-top: 5px;
+}
+
+#username {
+  margin-bottom: 10px;
+}
+
+#password {
+  margin-bottom: 20px;
+}
+
+.loginLabel {
+  font-family: ibm-semi-bold;
+}
+
+#forgotPass {
+  float: right;
+}
+
+#rememberMe {
+  display: none;
+}
+
+.checker {
+  background-image: url("assets/images/checkbox-unchecked.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.checkerLabel {
+  margin-left: 17px;
+}
+
+#rememberMe:checked + .checker {
+  background-image: url("assets/images/checkbox-checked.png");
+}
+
+#loginCheck {
+  float: left;
+}
+
+#loginOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#welcome {
+  font-family: ibm-light;
+  font-size: 1.2em;
+  color: #54636D;
+}
+
+#loginContainer{
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 400px; 
+}
+
+#bundled {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #3D70B2;
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+
+#logo {
+  background-image: url("assets/images/logo.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add Claim Page */
+#addClaimPage {
+  margin-top: 64px;
+  color: #152935;
+  width: 640px;
+}
+
+.pageHeader{
+  font-family: ibm-light;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+#claimContainer {
+  margin-top: 64px;
+  margin-left: 55px;
+}
+
+.claimSubHead {
+  font-family: ibm-light;
+  font-size: 28px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+#addClaimPage label{
+  font-family: ibm-semi-bold;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.claimInput {
+  display: block;
+  background-color: #E2E8F2;
+  border: none;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  width: 100%;
+  font-family: ibm;
+}
+
+#claimButtons {
+  float: right;
+  margin-bottom: 147px;
+}
+
+#submitClaim {
+  margin-left: 16px;
+  height: 40px;
+  width: 150px;
+  font-size: 14px;
+}
+
+#cancelClaim {
+  height: 40px;
+  width: 110px;
+  font-size: 14px;
+}
+
+.addClaimReqField {
+  font-size: 12px;
+  margin-top: -24px;
+  margin-bottom: 22px;
+}
+
+.claimBottomMargin {
+  margin-bottom: 24px;
+}
+
+/* Font Styles */
+@font-face {
+  font-family: ibm;
+  src: url("assets/fonts/IBMPlexSans_1347506961.otf");
+}
+@font-face {
+  font-family: ibm-bold;
+  src: url("assets/fonts/IBMPlexSans-Bold_519845316.otf");
+}
+@font-face {
+  font-family: ibm-bold-italic;
+  src: url("assets/fonts/IBMPlexSans-BoldItalic_679998752.otf");
+}
+@font-face {
+  font-family: ibm-extra-light;
+  src: url("assets/fonts/IBMPlexSans-ExtraLight_2965227845.otf");
+}
+@font-face {
+  font-family: ibm-extra-light-italic;
+  src: url("assets/fonts/IBMPlexSans-ExtraLightItalic_1950593697.otf");
+}
+@font-face {
+  font-family: ibm-italic;
+  src: url("assets/fonts/IBMPlexSans-Italic_106000795.otf");
+}
+@font-face {
+  font-family: ibm-light;
+  src: url("assets/fonts/IBMPlexSans-Light_580066108.otf");
+}
+@font-face {
+  font-family: ibm-light-italic;
+  src: url("assets/fonts/IBMPlexSans-LightItalic_3176640664.otf");
+}
+@font-face {
+  font-family: ibm-medium;
+  src: url("assets/fonts/IBMPlexSans-Medium_2438027430.otf");
+}
+@font-face {
+  font-family: ibm-medium-italic;
+  src: url("assets/fonts/IBMPlexSans-MediumItalic_992374786.otf");
+}
+@font-face {
+  font-family: ibm-semi-bold;
+  src: url("assets/fonts/IBMPlexSans-SemiBold_2452486998.otf");
+}
+@font-face {
+  font-family: ibm-semi-bold-italic;
+  src: url("assets/fonts/IBMPlexSans-SemiBoldItalic_4102110898.otf");
+}
+@font-face {
+  font-family: ibm-text;
+  src: url("assets/fonts/IBMPlexSans-Text_1598841832.otf");
+}
+@font-face {
+  font-family: ibm-text-italic;
+  src: url("assets/fonts/IBMPlexSans-TextItalic_1357183812.otf");
+}
+@font-face {
+  font-family: ibm-thin;
+  src: url("assets/fonts/IBMPlexSans-Thin_1446861526.otf");
+}
+@font-face {
+  font-family: ibm-thin-italic;
+  src: url("assets/fonts/IBMPlexSans-ThinItalic_774080050.otf");
+}

@@ -1,0 +1,90 @@
+################################################################################
+# IBM Confidential
+# 
+# OCO Source Materials
+# 
+# Copyright IBM Corp. 2019, 2020
+# 
+# The source code for this program is not published or otherwise
+# divested of its trade secrets, irrespective of what has been
+# deposited with the U.S. Copyright Office.
+################################################################################
+
+---
+#
+# Solutions prvides list of all solutions to be deployed to the network
+#
+
+
+solutions: 
+
+    claim: 
+
+        # solution api pattern is: solution-name/api/v1
+        rest_api_path: "/solution/api/v1"
+        # paths are relative to the server.js
+        rest_api_routes: "./routes/rest_api.js"
+        request_handler: "common-utils/request_handler"
+
+        verify_user_signature: false
+        disable_verify_user_signature_for_localhost: false
+        skip_verify_user_signature_if_no_key_found: true
+        
+        ui_verify_key: "TODO"
+        
+        # application admin
+        app_admin:
+            org: Org1
+            username: AppAdmin
+            secret: pass0
+            private_key: "TODO"
+            public_key: "TODO"
+        app_user1:
+            org: Org1
+            username: Hao
+            email: hao@example.com
+            secret: pass0
+        app_user2:
+            org: Org1
+            username: Alex
+            email: Alex@example.com
+            secret: pass0
+        app_user3:
+            org: Org1
+            username: Bonnie
+            email: Bonnie@example.com
+            secret: pass0
+          
+        chaincode:
+            name: "claim"
+            version: "v1.3"
+            append_hash_to_version: true
+            path: "solution_chaincode"
+            type: "golang"
+            init_function: "init"
+
+            endorsement_policy:
+                identities:
+                    - role:
+                        name: "member"
+                        mspId: "org1msp"
+                policy:
+                    1-of:
+                        - signed-by: 0
+            init_args: 
+                - "_loglevel"
+                - "DEBUG"
+                - "_cloudant"
+                - "TODO"
+                - "TODO"
+                - "claim"
+                - "TODO"
+        
+        channels:
+            mychannel:
+                config_path: ""
+                install_chaincode: false
+                instantiate_chaincode: false
+                create_channel: false
+          
+    

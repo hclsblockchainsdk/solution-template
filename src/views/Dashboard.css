@@ -1,0 +1,79 @@
+/*******************************************************************************
+ * IBM Confidential
+ * 
+ * OCO Source Materials
+ * 
+ * Copyright IBM Corp. 2019, 2020
+ * 
+ * The source code for this program is not published or otherwise
+ * divested of its trade secrets, irrespective of what has been
+ * deposited with the U.S. Copyright Office.
+ *******************************************************************************/
+ 
+/* Dashboard page */
+.sectionContainer {
+    margin-top: 40px;
+}
+
+.claimContainer {
+    width: 1259px;
+    margin-left: 55px;
+}
+
+.claimContainer .rt-tbody .-odd {
+    background-color: white;
+}
+
+
+div.rt-tr {
+    align-items: center;
+    height: 48px;
+    padding-left: 24px;
+}
+
+.ReactTable div.rt-table  div.rt-thead.-header div div {
+    border-right: 0;
+}
+
+div.rt-th {
+    font-family: ibm-semi-bold;
+    font-size: 14px;
+    text-align: left;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.ReactTable div.rt-table div.rt-tbody div div {
+    border-right: 0;
+}
+
+div.rt-td {
+    font-family: ibm;
+    font-size: 14px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.pageHeader {
+    font-family: ibm-light;
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 64px;
+    margin-left: 55px;
+}
+
+.sectionHeader {
+    font-family: ibm-semi-bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+.ReactTable {
+    border: 1px solid #dfe9e9;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}

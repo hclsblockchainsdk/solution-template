@@ -1,0 +1,50 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+*.exe
+*.exe~
+*.iml
+*.dylib
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+# Test binary, build with `go test -c`
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+*.test
+*.prof
+**/chaincode/pkg
+*.log
+*.cds
+
+**/launchConfigurations
+**/node_modules
+**/.vscode
+**/server/tmp
+**/tmp_*
+**/server/KeyValStore
+**/server/KeyValStore*
+**/build
+**/chaincodes/deploy
+**/tmp
+**/bin
+**/package-lock.json*
+**/cc_summaries
+
+.idea
+.vscode
+.project
+.jshintrc
+.DS_Store
+.sublime-project
+.tern-project
+.settings
+.metadata
+.editorconfig

@@ -1,0 +1,15 @@
+{
+    "apikey": "TODO",
+    "appidServiceEndpoint": "TODO",
+    "clientId": "TODO",
+    "iam_apikey_description": "TODO",
+    "iam_apikey_name": "TODO",
+    "iam_role_crn": "TODO",
+    "iam_serviceid_crn": "TODO",
+    "managementUrl": "TODO",
+    "oauthServerUrl": "TODO",
+    "profilesUrl": "TODO",
+    "secret": "TODO",
+    "tenantId": "TODO",
+    "version": 3
+}

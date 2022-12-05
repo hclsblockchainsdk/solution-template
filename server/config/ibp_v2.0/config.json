@@ -1,0 +1,30 @@
+{
+    "host": "localhost",
+    "port": "3000",
+    "enable_https": false,
+    "swagger_host": "localhost:3000",
+    "dev_mode": false,
+    "log_level": "DEBUG",
+    "chaincode_src_path": "./chaincodes/src",
+    "chaincode_deploy_path": "./chaincodes/src",
+    "tmp_dir": "../tmp",
+    "sessionMaxAge": "1800000",
+    "channel_creation_wait_time": "5000",
+    "chaincode_upate_wait_time": "30000",
+    "instantiateProposalTimeout": "180000",
+    "eventWaitTime": "60000",
+    "transactionProposalTimeout": "60000",
+    "login_token_timeout_sec": "1800",
+    "kms_module": "kms_local.js",
+    "ums_module": "ums_ca.js",
+    "network_config_file": "./server/config/ibp_v2.0/network-config.json",
+    "solution_config_file": "./server/config/ibp_v2.0/solutions.yaml",
+    "key_value_store_module": "fabric-client/lib/impl/FileKeyValueStore.js",
+    "query_option": {
+        "number_of_peers_to_send_query": 1,
+        "use_non_endorsing_peers_first": true
+    },
+    "hyperledger_fabric_version": "1.4-ibp",
+    "endorsement_policy": "AND",
+    "app_id_config_file": "./server/config/application-id-integration.json"
+}

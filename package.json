@@ -1,0 +1,69 @@
+{
+  "name": "solution_template",
+  "version": "4.0.0",
+  "description": "solution_template Node.js web application on Hyperledger Fabric.",
+  "proxy": "http://localhost:3000/",
+  "scripts": {
+    "setup": "sh scripts/setup.sh",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "go": "sh scripts/runBuild.sh"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "4.5.2",
+    "compression": "1.7.*",
+    "cookie-parser": "1.4.*",
+    "cookie-session": "^1.4.0",
+    "cors": "2.8.*",
+    "debug": "^4.1.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "fabric-ca-client": "~1.4.10",
+    "fabric-client": "~1.4.10",
+    "ibmcloud-appid": "^6.1.1",
+    "ip": "^1.1.5",
+    "jsrsasign": "^9.1.9",
+    "jwt-decode": "^3.0.0-beta.2",
+    "log4js": "^6.3.0",
+    "lowdb": "^1.0.0",
+    "md5-dir": "^0.2.0",
+    "moment": "2.27.0",
+    "morgan": "^1.1.1",
+    "node-rsa": "^1.0.1",
+    "pug": "3.0.0",
+    "react": "^16.3.2",
+    "react-datepicker": "1.8.0",
+    "react-dom": "^16.3.2",
+    "react-onclickoutside": "6.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-table": "~6.8.6",
+    "reftools": "^1.1.6",
+    "request": "^2.81.0",
+    "sendmail": "^1.2.0",
+    "serve-static": "1.14.*",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "uuid": "^8.3.0",
+    "ws": "^7.3.*"
+  },
+  "engines": {
+    "node": "^8.9.0 || ^10.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {},
+  "author": {
+    "name": "Woong A. Yoon"
+  },
+  "license": "",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
