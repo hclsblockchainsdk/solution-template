@@ -1,6 +1,6 @@
 <!--
 
-Thanks for contributing to Open Digital Health Pass!
+Thanks for contributing to HCLS Blockchain SDK!
 
 You can find all the instructions for contributing at the [CONTRIBUTING file].
 
@@ -15,7 +15,7 @@ Before submitting your PR make sure that:
 
 Before expecting a review for your PR make sure that all github checks are passing.
 
-[CONTRIBUTING file]: https://github.com/digitalhealthpass/docs/blob/main/CONTRIBUTING.md
+[CONTRIBUTING file]: https://github.com/hclsblockchainsdk/hclsblockchainsdk/blob/main/CONTRIBUTING.md
 [good commit messages]: https://chris.beams.io/posts/git-commit/
 [includes keywords to automatically close issues]: https://help.github.com/en/articles/closing-issues-using-keywords
 
